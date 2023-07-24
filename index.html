@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museum Name</title>
+  <link rel="stylesheet" href="./Home.css">
+</head>
+
+<body>
+  <div id="background"></div>
+  <h2>NOTRAINMUSEUM</h2>
+  <p id="craftName">Dinosaur Fossil</p>
+  <p class="instruction"></p>
+  <br>
+  <p class="intro">Start your journey with 'Start', stop with 'Stop'.<br>
+    Beat the 'Suggested duration', become a part of the 3D artifact's creation.</p>
+
+  <span class="suggest">Suggested duration:</span><span class="sgst">00:00:02</span>
+  </p>
+  <div id="timer">00:00:00</div>
+  <div id="message1" class="hidden">
+    <p id="messageText1">Congratulations! You beat the suggested duration. Let's color the artifact!</p>
+    <button class="selectBtn" id="goBtn">GO</button>
+    <button class="selectBtn" id="noBtn1">No</button>
+  </div>
+  <div id="message2" class="hidden">
+    <p id="messageText2">Almost! Would you like to give it more time?</p>
+    <button class="selectBtn" id="yesBtn">Yes</button>
+    <button class="selectBtn" id="noBtn2">No</button>
+  </div>
+
+  <span class="btn" id="startBtn">Start</span>
+  <span class="btn" id="stopBtn">Stop</span>
+
+  <div id="canvasContainer">
+    <!-- <div id="canvas"></div> -->
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@latest/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@latest/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@latest/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
+  <script src="Home.js"></script>
+  
+</body>
+
+</html>

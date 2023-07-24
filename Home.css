@@ -1,0 +1,180 @@
+/* span {
+    margin: 0;
+    padding: 0;
+  
+  } */
+/* body {
+    background-image: url(./sky.JPG);
+    /* opacity:0.4; 
+    z-index:-10;
+} 
+*/
+#background {
+    position: fixed; /* 固定定位 */
+    top: 0; 
+    left: 0;
+    width: 100%; /* 宽度设置为100%，使其充满整个屏幕 */
+    height: 100%; /* 高度设置为100%，使其充满整个屏幕 */
+    background: url(./sky.JPG) no-repeat center center fixed; 
+    background-size: cover; /* 背景图像覆盖整个元素 */
+    z-index: -1; /* 设置z-index使其在内容之下 */
+    /* 设置rgba的透明度，这里设置为50%透明 */
+    opacity:0.8; 
+    /* background-color: rgba(255, 255, 255, 0.4); */
+    mix-blend-mode: multiply;
+}
+
+* {
+    text-align: center;
+    /* color: #1569a4; */
+    /* color: #454245; */
+      font-weight: 520;
+}
+
+h2 {
+    background: #f2f3f7;
+    opacity:0.9;
+    margin: -8px;
+    padding: 20px;
+    box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+        -2px -2px 12px rgba(255, 255, 255, 0.5),
+        inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+        2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+#craftName {
+    font-size: 42px;
+    margin-top: 24px;
+    margin-bottom: -32px;
+    z-index: 1;  /* or any number greater than -1 */
+    position: relative;  /* z-index only works on positioned elements */
+}
+
+.sgst {
+    font-size: 22px;
+    font-weight: 550;
+    padding: 10px;
+}
+
+.instruction {
+    font-size: 24px;
+}
+
+/* .suggest .intro {
+    font-size: 20px;
+} */
+#timer {
+    margin-top: -8PX;
+    font-size: 42px;
+}
+
+.hidden {
+    font-size: 22px;
+    display: none;
+     z-index: 1;  /* or any number greater than -1 */
+  position: relative;  /* z-index only works on positioned elements */
+}
+
+.btn {
+    z-index: 1;  /* or any number greater than -1 */
+    position: relative;  /* z-index only works on positioned elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 18px 42px;
+    background: #f2f3f7;
+    display: inline-block;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    /* color: #5a84a2; */
+    font-size: 22px;
+    border-radius: 60px;
+    box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+        -2px -2px 12px rgba(255, 255, 255, 0.5),
+        inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+        2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+    box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
+        inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+        inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+        inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+#canvasContainer {
+    opacity:0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: -140px;
+   
+
+}
+
+.selectBtn {
+    z-index: 2;  /* or any number greater than -1 */
+    position: relative;  /* z-index only works on positioned elements */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 20px;
+    /* background: #f2f3f7; */
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: none;
+    font-weight: 100;
+    letter-spacing: 2px;
+    /* color: #5a84a2; */
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+                -2px -2px 12px rgba(255, 255, 255, 0.5),
+                inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+                2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.selectBtn:hover {
+    box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
+        inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+        inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+        inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+#messageText2,
+#messageText1 {
+    font-size: 22px;
+}
+
+#message2,
+#message1 {
+
+    z-index: 2;  /* or any number greater than -1 */
+    position: relative;  /* z-index only works on positioned elements */
+
+    opacity:0.9;
+    background: #f2f3f7;
+    padding: 10px 10px;
+    margin: 6px 160px;
+    border-radius: 10px;
+    box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+                -2px -2px 12px rgba(255, 255, 255, 0.5),
+                inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+                2px 2px 8px rgba(0, 0, 0, 0.15);
+
+}
+
+/* #canvas {
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }  */
